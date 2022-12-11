@@ -1,4 +1,4 @@
-{% set version = "0.2.5" %}
+{% set version = "0.2.6" %}
 
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pytest-watcher/pytest-watcher-{{ version }}.tar.gz
-  sha256: 0a220d18b778fbae4d876f8d7d2eb86e63d7d8257cd6b05f42c13aa6625c0b6f
+  sha256: 351dfb3477366030ff275bfbfc9f29bee35cd07f16a3355b38bf92766886bae4
 
 build:
   number: 0
@@ -21,9 +21,9 @@ requirements:
   host:
     - poetry-core >=1.0.0
     - pip
-    - python >=3.6,<4.0
+    - python >=3.7,<4.0
   run:
-    - python >=3.6,<4.0
+    - python >=3.7,<4.0
     - watchdog >=2.0.0
 
 test:
