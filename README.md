@@ -1,11 +1,11 @@
-About pytest-watcher
-====================
+About pytest-watcher-feedstock
+==============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pytest-watcher-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/olzhasar/pytest-watcher
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pytest-watcher-feedstock/blob/main/LICENSE.txt)
 
 Summary: Continiously runs pytest on changes in *.py files
 
