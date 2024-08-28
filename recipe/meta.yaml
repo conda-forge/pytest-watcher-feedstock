@@ -1,4 +1,4 @@
-{% set version = "0.4.2" %}
+{% set version = "0.4.3" %}
 
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pytest-watcher/pytest_watcher-{{ version }}.tar.gz
-  sha256: 7b292f025ca19617cd7567c228c6187b5087f2da9e4d2cf6e144e5764a0471b0
+  sha256: 0cb0e4661648c8c0ff2b2d25efa5a8e421784b9e4c60fcecbf9b7c30b2d731b3
 
 build:
   number: 0
