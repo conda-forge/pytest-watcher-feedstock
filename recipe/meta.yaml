@@ -19,13 +19,14 @@ build:
 
 requirements:
   host:
-    - poetry-core >=1.0.0
     - pip
     - python {{ python_min }}
+    - hatchling
+    - hatch-vcs
   run:
     - python >={{ python_min }},<4.0
     - watchdog >=2.0.0
-    - tomli >=2.0.0
+    - tomli >=2.0.1
 
 test:
   imports:
