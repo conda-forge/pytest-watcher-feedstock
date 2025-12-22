@@ -35,9 +35,16 @@ test:
     - pip check
     - ptw --help
     - pytest-watcher --help
+    - pytest -vv tests
   requires:
     - pip
     - python {{ python_min }}
+    - pytest
+    - pytest-mock
+    - freezegun
+    - "coverage[toml]"
+  source_files:
+    - tests
 
 about:
   home: https://github.com/olzhasar/pytest-watcher
