@@ -1,4 +1,4 @@
-{% set version = "0.5.0" %}
+{% set version = "0.6.0" %}
 
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/pytest-watcher/pytest_watcher-{{ version }}.tar.gz
-  sha256: 9901cb857b3d2d6d941e6e5f5d43a0eb780fad1d39394a5d4d00c76219be1043
+  sha256: d06c6633cc92ba177a7257a54a2ec9705e3116ef5ae7a2cba0eed708fa768c58
 
 build:
   number: 0
@@ -19,13 +19,14 @@ build:
 
 requirements:
   host:
-    - poetry-core >=1.0.0
     - pip
     - python {{ python_min }}
+    - hatchling
+    - hatch-vcs
   run:
     - python >={{ python_min }},<4.0
     - watchdog >=2.0.0
-    - tomli >=2.0.0
+    - tomli >=2.0.1
 
 test:
   imports:
@@ -34,9 +35,16 @@ test:
     - pip check
     - ptw --help
     - pytest-watcher --help
+    - pytest -vv tests
   requires:
     - pip
     - python {{ python_min }}
+    - pytest
+    - pytest-mock
+    - freezegun
+    - "coverage[toml]"
+  source_files:
+    - tests
 
 about:
   home: https://github.com/olzhasar/pytest-watcher
